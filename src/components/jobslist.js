@@ -33,10 +33,12 @@ const JobsList = ({ isSpanish }) => {
     },
   ]);
 
+  const headerClass = isSpanish ? "bg-white text-dark" : "bg-dark text-white";
+
   return (
     <div>
       <table className="table">
-        <thead className={isSpanish ? "thead-light" : "thead-dark"}>
+        <thead className={headerClass}>
           <tr>
             <th scope="col">#</th>
             <th scope="col">
